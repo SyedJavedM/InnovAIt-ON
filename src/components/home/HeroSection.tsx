@@ -17,7 +17,7 @@ const HeroSection = () => {
         <div className="flex flex-col lg:flex-row items-center gap-12">
           <div className="lg:w-1/2 text-center lg:text-left">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              <span className="gradient-heading">Ideate.</span> <span className="gradient-heading">Innovate.</span> <span className="gradient-heading">Ignite.</span>
+              <span className="gradient-heading">Ideate.Innovate.Ignite.</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-lg lg:max-w-md mx-auto lg:mx-0">
               Our project-based club is a dynamic community of passionate individuals dedicated to bring ideas to life. Dive into collaborative projects spanning diverse fields, from cutting-edge technology to sustainable design. Join us in transforming inspiration into tangible results and embark on a journey of innovation, learning, and shared success!!
