@@ -14,7 +14,7 @@ const HeroSection = () => {
     <div className="relative overflow-hidden tech-pattern">
       <div className="absolute inset-0 bg-gradient-to-b from-background/80 to-background"></div>
       <div className="container mx-auto px-4 py-20 lg:py-32 relative z-10">
-        <div className="flex flex-col lg:flex-row items-center gap-12">
+        <div className="flex flex-col-reverse lg:flex-row items-center gap-12">
           <div className="lg:w-1/2 text-center lg:text-left">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
               <span className="gradient-heading">Ideate.Innovate.Ignite.</span>
@@ -33,11 +33,11 @@ const HeroSection = () => {
             </div>
           </div>
 
-          <div className="lg:w-1/2 relative" style={{ marginLeft: '400px' }}>
+          <div className="lg:w-1/2 relative mb-8 lg:mb-0 lg:ml-[400px]">
             <img 
               src="./images/logo.png" 
               alt="Tech Club" 
-              className="rounded-lg border-white/10"
+              className="rounded-lg border-white/10 mx-auto"
             />
           </div>
         </div>

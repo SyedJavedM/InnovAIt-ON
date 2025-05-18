@@ -8,48 +8,84 @@ const Gallery = () => {
   // Sample gallery data
   const galleryCategories = [
     { id: "all", name: "All" },
-    { id: "hackathons", name: "Hackathons" },
+    { id: "blitzpy", name: "Blitz-Py" },
+    { id: "talk", name: "Talks" },
     { id: "workshops", name: "Workshops" },
     { id: "fun", name: "Fun Moments" }
   ];
   
   const galleryItems = [
     {
-      id: 1,
-      title: "Hackathon 2023",
-      category: "hackathons",
-      image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+      title: "Blitz-Py",
+      category: "blitzpy",
+      image: "./images/Gallery/Blitz py.jpeg"
+    },
+     {
+      title: "Blitz-Py",
+      category: "blitzpy",
+      image: "./images/Gallery/Blitz py2.jpeg"
+    },
+     {
+      title: "Blitz-Py",
+      category: "blitzpy",
+      image: "./images/Gallery/blitz py4.jpeg"
+    },
+     {
+      title: "Blitz-Py",
+      category: "blitzpy",
+      image: "./images/Gallery/Blitz py 1.jpg"
+    },
+     {
+      title: "Blitz-Py",
+      category: "blitzpy",
+      image: "./images/Gallery/Blitz py 5.jpeg"
     },
     {
-      id: 2,
-      title: "Web Dev Workshop",
+      title: "Computer Networks",
+      category: "talk",
+      image: "./images/Gallery/Talk 1.jpeg"
+    },
+    {
+      title: "Computer Networks",
+      category: "talk",
+      image: "./images/Gallery/Talk.jpeg"
+    },
+    {
+      title: "Computer Networks",
+      category: "talk",
+      image: "./images/Gallery/talk 2.jpg"
+    },
+    {
+      title: "Ai in Cyberspace",
+      category: "talk",
+      image: "./images/Gallery/Ai Cyberspace.jpg"
+    },
+    {
+      title: "Ai in Cyberspace",
+      category: "talk",
+      image: "./images/Gallery/Innovaiton team.jpg"
+    },
+    {
+      title: "Peer Learning",
       category: "workshops",
-      image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+      image: "./images/Gallery/peer.jpeg"
     },
     {
-      id: 3,
-      title: "Team Building Event",
-      category: "fun",
-      image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-    },
-    {
-      id: 4,
-      title: "AI Workshop",
+      title: "Peer Learning",
       category: "workshops",
-      image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+      image: "./images/Gallery/peer1.jpeg"
     },
     {
-      id: 5,
-      title: "Coding Challenge",
-      category: "hackathons",
-      image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+      title: "Peer Learning",
+      category: "workshops",
+      image: "./images/Gallery/peer2.jpeg"
     },
     {
-      id: 6,
-      title: "Club Meetup",
-      category: "fun",
-      image: "https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+      title: "Peer Learning",
+      category: "workshops",
+      image: "./images/Gallery/peer3.jpeg"
     },
+
   ];
   
   return (
@@ -61,10 +97,14 @@ const Gallery = () => {
             Explore photos and videos from our past events, workshops, and fun moments.
           </p>
           
-          <Tabs defaultValue="all" className="w-full max-w-3xl mx-auto mb-12">
-            <TabsList className="grid grid-cols-4 mb-8">
+           <Tabs defaultValue="all" className="w-full max-w-2xl mx-auto mb-8">
+            <TabsList className="grid grid-cols-5 gap-1 mb-6">
               {galleryCategories.map((category) => (
-                <TabsTrigger key={category.id} value={category.id}>
+                <TabsTrigger
+                  key={category.id}
+                  value={category.id}
+                  className="text-xs px-2 py-1 md:px-3 md:py-2"
+                >
                   {category.name}
                 </TabsTrigger>
               ))}

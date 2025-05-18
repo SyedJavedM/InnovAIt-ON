@@ -36,49 +36,50 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Quick Links */}
-          <div className="col-span-1 ml-28">
-            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
-            <ul className="space-y-2">
-              <li>
-                <NavLink to="/" className="text-muted-foreground hover:text-tech-purple text-sm transition-colors">
-                  Home
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to="/about" className="text-muted-foreground hover:text-tech-purple text-sm transition-colors">
-                  About Us
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to="/events" className="text-muted-foreground hover:text-tech-purple text-sm transition-colors">
-                  Events
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to="/gallery" className="text-muted-foreground hover:text-tech-purple text-sm transition-colors">
-                  Gallery
-                </NavLink>
-              </li>
-            </ul>
-          </div>
-
-          {/* Resources */}
-          <div className="col-span-1 ml-16">
-            <h3 className="text-lg font-semibold mb-4">Resources</h3>
-            <ul className="space-y-2">
-              <li>
-                <NavLink to="/newsletter" className="text-muted-foreground hover:text-tech-purple text-sm transition-colors">
-                  Newsletter
-                </NavLink>
-              </li>
-              
-              <li>
-                <NavLink to="/contact" className="text-muted-foreground hover:text-tech-purple text-sm transition-colors">
-                  Contact Us
-                </NavLink>
-              </li>
-            </ul>
+          {/* Quick Links & Resources (side by side on mobile) */}
+          <div className="col-span-1 ml-0 flex flex-col sm:flex-row sm:space-x-8">
+            {/* Quick Links */}
+            <div className="mb-8 sm:mb-10">
+              <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+              <ul className="space-y-2">
+                <li>
+                  <NavLink to="/" className="text-muted-foreground hover:text-tech-purple text-sm transition-colors">
+                    Home
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/about" className="text-muted-foreground hover:text-tech-purple text-sm transition-colors">
+                    About Us
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/events" className="text-muted-foreground hover:text-tech-purple text-sm transition-colors">
+                    Events
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/gallery" className="text-muted-foreground hover:text-tech-purple text-sm transition-colors">
+                    Gallery
+                  </NavLink>
+                </li>
+              </ul>
+            </div>
+            {/* Resources */}
+            <div>
+              <h3 className="text-lg font-semibold mb-15">Resources</h3>
+              <ul className="space-y-2">
+                <li>
+                  <NavLink to="/newsletter" className="text-muted-foreground hover:text-tech-purple text-sm transition-colors">
+                    Newsletter
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/contact" className="text-muted-foreground hover:text-tech-purple text-sm transition-colors">
+                    Contact Us
+                  </NavLink>
+                </li>
+              </ul>
+            </div>
           </div>
 
           {/* Newsletter Signup */}

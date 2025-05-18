@@ -39,6 +39,16 @@ const Events = () => {
     },
     {
       id: 7,
+      title: "Peer Learning for Enhanced Employability",
+      description: "Learn the basics of web development in this hands-on workshop.",
+      date: "February 14-15, 2023",
+      time: "3:00 PM - 5:00 PM",
+      location: "401, AIML Block",
+      image: "./images/Peer to peer.jpeg",
+      category: "workshop"
+    },
+    {
+      id: 8,
       title: "Model Your Language",
       description: "Distinguished Lecture on LLMs and Gen AI insights .",
       date: "July 24, 2024",
@@ -48,7 +58,7 @@ const Events = () => {
       category: "tech_talk"
     },
     {
-      id: 8,
+      id: 9,
       title: "AI in CyberSpace",
       description: "Distinguished Lecture on Enhancing Security, Privacy And Threat.",
       date: "March 10, 2025",
