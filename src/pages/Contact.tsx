@@ -192,9 +192,6 @@ const Contact = () => {
             <p className="text-muted-foreground mb-6 max-w-xl mx-auto">
               We're always looking for passionate tech enthusiasts to join our community. Fill out the form or contact us directly to learn about membership opportunities.
             </p>
-            <Button asChild className="bg-tech-purple hover:bg-tech-purple/90">
-              <a href="/members">Join Our Community</a>
-            </Button>
           </div>
 
             

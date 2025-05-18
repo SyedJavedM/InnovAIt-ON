@@ -7,7 +7,7 @@ const HeroSection = () => {
   const navigate = useNavigate();
 
   const handleJoinClick = () => {
-    navigate('/Members#join-our-team');
+    navigate('/contact');
   };
 
   return (

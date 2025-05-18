@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="bg-muted/50 pt-12 pb-8">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 items-start">
           {/* Logo and Description */}
           <div className="col-span-1 md:col-span-1">
             <div className="flex items-center space-x-2 mb-4">
@@ -37,7 +37,7 @@ const Footer = () => {
           </div>
 
           {/* Quick Links & Resources (side by side on mobile) */}
-          <div className="col-span-1 ml-0 flex flex-col sm:flex-row sm:space-x-8">
+          <div className="col-span-1 ml-0 flex flex-col sm:flex-row sm:space-x-12">
             {/* Quick Links */}
             <div className="mb-8 sm:mb-10">
               <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
@@ -65,7 +65,7 @@ const Footer = () => {
               </ul>
             </div>
             {/* Resources */}
-            <div>
+            <div className="sm:pl-8">
               <h3 className="text-lg font-semibold mb-15">Resources</h3>
               <ul className="space-y-2">
                 <li>
@@ -83,7 +83,7 @@ const Footer = () => {
           </div>
 
           {/* Newsletter Signup */}
-          <div className="col-span-1">
+          <div className="col-span-1 md:col-start-4 md:ml-8">
             <h3 className="text-lg font-semibold mb-4">Stay Updated</h3>
             <p className="text-muted-foreground text-sm mb-4">
               Subscribe to our newsletter for the latest updates.
