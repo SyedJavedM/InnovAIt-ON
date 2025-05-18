@@ -20,7 +20,7 @@ const HeroSection = () => {
               <span className="gradient-heading">Ideate.Innovate.Ignite.</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-lg lg:max-w-md mx-auto lg:mx-0">
-              Our project-based club is a dynamic community of passionate individuals dedicated to bring ideas to life. Dive into collaborative projects spanning diverse fields, from cutting-edge technology to sustainable design. Join us in transforming inspiration into tangible results and embark on a journey of innovation, learning, and shared success!!
+              Our project-based club is a dynamic community of passionate individuals dedicated to bring ideas to life. Dive into collaborative projects spanning diverse fields from cutting-edge technology to sustainable design. Join us in transforming inspiration into tangible results and embark on a journey of innovation, learning and shared success!!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button 
