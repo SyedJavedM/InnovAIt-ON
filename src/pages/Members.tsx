@@ -94,7 +94,7 @@ const Members = () => {
     },
     {
       id: 11,
-      name:  "Dhanya Patgar",
+      name:  "Dhanya",
       role: "Core Finance Team Member",
       bio: "Driven by strategic financial planning and analysis, working to optimize event budgets and support sustainable growth.",
       image: "./images/members/dhanya.jpg",
