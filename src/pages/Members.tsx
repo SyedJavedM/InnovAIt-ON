@@ -253,7 +253,7 @@ const Members = () => {
       role: "Marketing Associate",
       bio: "Passionate about engaging audiences through innovative marketing.",
       image: "./images/contrib/Nithya  .jpg",
-      linkedin: "#",
+      linkedin: "https://www.linkedin.com/in/nithya-krishnamurthy-050690242/",
     },
     {
       id: 1,
