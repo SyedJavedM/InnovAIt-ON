@@ -42,38 +42,38 @@ const About = () => {
   
   const leaders = [
     {
-      name: "MR. SATISH SHETTY",
+      name: "Mr. SATISH SHETTY",
       title: "Chairman, RNSIT",
       description: "Chairman of RNS Institute of Technology, guiding the institution's vision and mission.",
       image: "./images/Leaders/Chair.webp"
     },
     {
-      name: "MR. KARAN S SHETTY",
+      name: "Mr. KARAN S SHETTY",
       title: "CEO, RNSIT",
       description: "CEO of RNS Institute of Technology, overseeing the institution's operations and strategic direction.",
       image: "./images/Leaders/CEO.webp"
     },
      {
-      name: "MR. MURALIKRISHNA MYSORE",
+      name: "Mr. MURALIKRISHNA MYSORE",
       title: "CTO, RNSIT",
       description: "Chief Technology Officer of RNS Institute of Technology, leading technology initiatives and innovations.",
       image: "./images/Leaders/CTO.webp"
     },
     {
-      name: "DR. M K VENKATESHA",
+      name: "Dr. M K VENKATESHA",
       title: "Director, RNSIT",
       description: "Director of RNS Institute of Technology, providing vision and leadership to the college community.",
       image: "./images/Leaders/Director.webp"
     },
    
     {
-      name: "DR. RAMESH BABU H S",
+      name: "Dr. RAMESH BABU H S",
       title: "Principal, RNSIT",
       description: "Principal of RNS Institute of Technology, guiding the institution and its students.",
       image: "./images/Leaders/Principal.webp"
     },
     {
-      name: "Dr. Andhe Pallavi",
+      name: "Dr. ANDHE PALLAVI",
       title: "HOD, AIML Department",
       description: "Head of the Department, Artificial Intelligence and Machine Learning, RNSIT.",
       image: "./images/Leaders/Dr.-Andhe-Pallavi Ma'am HOD.jpg"
