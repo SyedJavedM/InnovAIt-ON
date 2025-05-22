@@ -40,6 +40,48 @@ const About = () => {
   
   
   
+  const leaders = [
+    {
+      name: "MR. SATISH SHETTY",
+      title: "Chairman, RNSIT",
+      description: "Chairman of RNS Institute of Technology, guiding the institution's vision and mission.",
+      image: "./images/Leaders/Chair.webp"
+    },
+    {
+      name: "MR. KARAN S SHETTY",
+      title: "CEO, RNSIT",
+      description: "CEO of RNS Institute of Technology, overseeing the institution's operations and strategic direction.",
+      image: "./images/Leaders/CEO.webp"
+    },
+     {
+      name: "MR. MURALIKRISHNA MYSORE",
+      title: "CTO, RNSIT",
+      description: "Chief Technology Officer of RNS Institute of Technology, leading technology initiatives and innovations.",
+      image: "./images/Leaders/CTO.webp"
+    },
+    {
+      name: "DR. M K VENKATESHA",
+      title: "Director, RNSIT",
+      description: "Director of RNS Institute of Technology, providing vision and leadership to the college community.",
+      image: "./images/Leaders/Director.webp"
+    },
+   
+    {
+      name: "DR. RAMESH BABU H S",
+      title: "Principal, RNSIT",
+      description: "Principal of RNS Institute of Technology, guiding the institution and its students.",
+      image: "./images/Leaders/Principal.webp"
+    },
+    {
+      name: "Dr. Andhe Pallavi",
+      title: "HOD, AIML Department",
+      description: "Head of the Department, Artificial Intelligence and Machine Learning, RNSIT.",
+      image: "./images/Leaders/Dr.-Andhe-Pallavi Ma'am HOD.jpg"
+    },
+   
+   
+  ];
+
   const advisors = [
     {
       name: "Prof. Sajitha N",
@@ -127,6 +169,38 @@ const About = () => {
           </section>
           
           
+          {/* Leaders */}
+          <section className="mb-20">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold mb-4">Our Leaders</h2>
+              <p className="text-muted-foreground max-w-xl mx-auto">
+                Meet the institutional leaders who inspire and support our club's vision.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {leaders.map((leader, index) => (
+                <Card key={index} className="overflow-hidden card-hover flex flex-col items-center">
+                  <div className="h-80 w-80 overflow-hidden mt-6 mb-4 border-4 border-tech-purple">
+                    <img
+                      src={leader.image}
+                      alt={leader.name}
+                      className="h-full w-full object-cover"
+                    />
+                  </div>
+                  <CardHeader className="items-center text-center">
+                    <CardTitle>{leader.name}</CardTitle>
+                    <CardDescription className="text-tech-purple font-medium">
+                      {leader.title}
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-muted-foreground text-center">{leader.description}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </section>
+
           {/* Faculty Advisor */}
 <section className="mb-20">
             <div className="text-center mb-12">
@@ -138,12 +212,12 @@ const About = () => {
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {advisors.map((advisor, index) => (
-                <Card key={index} className="overflow-hidden card-hover">
-                  <div className="aspect-square overflow-hidden">
+                <Card key={index} className="overflow-hidden card-hover flex flex-col items-center">
+                  <div className="h-80 w-80 overflow-hidden mt-6 mb-4 border-4 border-tech-purple">
                     <img
                       src={advisor.image}
                       alt={advisor.name}
-                      className="w-full h-full object-cover"
+                      className="h-full w-full object-cover"
                     />
                   </div>
                   <CardHeader>
