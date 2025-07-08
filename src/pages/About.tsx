@@ -109,36 +109,54 @@ const About = () => {
           </div>
           
           {/* Mission Section */}
-          <section className="mb-20">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
+           <section className="mb-20">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="text-2xl sm:text-3xl font-bold mb-4">Our Mission</h2>
-                <p className="text-base sm:text-lg mb-4 sm:mb-6 text-muted-foreground">
+                <h2 className="text-3xl font-bold mb-4">Our Mission</h2>
+                <p className="text-lg mb-6 text-muted-foreground">
                   We believe in empowering students to explore, learn, and innovate in the world of technology. Our mission is to create a collaborative environment where tech enthusiasts can share knowledge, build projects, and grow together.
                 </p>
-                <p className="text-base sm:text-lg mb-4 sm:mb-6 text-muted-foreground">
+                <p className="text-lg mb-6 text-muted-foreground">
                   Through workshops, hackathons, and speaker events, we aim to bridge the gap between academic learning and industry practice, preparing our members for successful careers in technology.
                 </p>
-                <div className="flex gap-2 sm:gap-4 flex-wrap">
-                  <div className="bg-muted/50 px-3 py-2 rounded-full text-xs sm:text-sm font-medium">20+ Active Members</div>
-                  <div className="bg-muted/50 px-3 py-2 rounded-full text-xs sm:text-sm font-medium">10+ Events Per Year</div>
+                <div className="flex gap-4 flex-wrap">
+                  <div className="bg-muted/50 px-4 py-2 rounded-full text-sm font-medium">20+ Active Members</div>
+                  <div className="bg-muted/50 px-4 py-2 rounded-full text-sm font-medium">10+ Events Per Year</div>
                 </div>
               </div>
-              <div className="bg-card p-4 sm:p-8 rounded-lg border border-border shadow-md mt-6 lg:mt-0">
-                <blockquote className="text-base sm:text-lg italic mb-4 sm:mb-6">
-                  "Our goal is to foster a community where passion for technology translates into real-world skills and innovative solutions. We're not just about coding; we're about creating impact through technology."
+              <div className="bg-card p-8 rounded-lg border border-border shadow-md">
+                <blockquote className="text-lg italic mb-6">
+                  "Proud to see the club grow from an idea to a hub of creativity and AI excellence."
                 </blockquote>
                 <div className="flex items-center">
-                  <div className="h-10 w-10 sm:h-12 sm:w-12 rounded-full overflow-hidden mr-3 sm:mr-4">
+                  <div className="h-12 w-12 rounded-full overflow-hidden mr-4">
                     <img 
-                      src="./images/members/Sujal S.jpg" 
+                      src="./images/Alumni/amogh-kotha.jpg" 
                       alt="Club Head" 
                       className="h-full w-full object-cover"
                     />
                   </div>
                   <div>
-                    <p className="font-medium text-sm sm:text-base">Sujal S</p>
-                    <p className="text-xs sm:text-sm text-muted-foreground">Head, InnovAIt-ON Club</p>
+                    <p className="font-medium">Amogh Kotha</p>
+                    <p className="text-sm text-muted-foreground">Head (2023-25), InnovAIt-ON Club</p>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-card p-8 rounded-lg border border-border shadow-md">
+                <blockquote className="text-lg italic mb-6">
+                 "Leading the technical front taught me how to turn ideas into action and inspire innovation at every step."
+                </blockquote>
+                <div className="flex items-center">
+                  <div className="h-12 w-12 rounded-full overflow-hidden mr-4">
+                    <img 
+                      src="./images/Alumni/amogh-bharadwaj.jpg" 
+                      alt="Club Head" 
+                      className="h-full w-full object-cover"
+                    />
+                  </div>
+                  <div>
+                    <p className="font-medium">Amogh M</p>
+                    <p className="text-sm text-muted-foreground">Technical Head (2023-25), InnovAIt-ON Club</p>
                   </div>
                 </div>
               </div>
