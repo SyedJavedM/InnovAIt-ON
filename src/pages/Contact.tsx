@@ -56,7 +56,13 @@ const Contact = () => {
             <Card className="card-hover">
               <CardHeader className="text-center">
                 <div className="mx-auto bg-muted w-12 h-12 rounded-full flex items-center justify-center text-tech-purple mb-4">
-                  <a href="mailto:innovaiton.aiml@rnsit.ac.in" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="mailto:innovaiton.aiml@rnsit.ac.in"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Send email to innovaiton.aiml@rnsit.ac.in"
+                    title="Send email to innovaiton.aiml@rnsit.ac.in"
+                  >
                     <Mail className="h-6 w-6" />
                   </a>
                 </div>
@@ -73,7 +79,13 @@ const Contact = () => {
             <Card className="card-hover">
               <CardHeader className="text-center">
                 <div className="mx-auto bg-muted w-12 h-12 rounded-full flex items-center justify-center text-tech-purple mb-4">
-                  <a href="https://maps.app.goo.gl/wKM71Nw3nYX684ydA" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="https://maps.app.goo.gl/wKM71Nw3nYX684ydA"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="View location on Google Maps"
+                    title="View location on Google Maps"
+                  >
                     <MapPin className="h-6 w-6" />
                   </a>
                 </div>

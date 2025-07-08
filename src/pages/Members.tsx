@@ -560,7 +560,7 @@ const Members = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {alumni.map((member) => (
                   <Card key={member.id} className="overflow-hidden card-hover">
-                    <div className="aspect-square overflow-hidden grayscale hover:grayscale-0 transition-all duration-300">
+                    <div className="aspect-square overflow-hidden">
                       <img
                         src={member.image}
                         alt={member.name}
