@@ -14,7 +14,7 @@ const Events = () => {
       date: "March 12, 2023",
       time: "2:00 PM - 5:00 PM",
       location: "Computer Lab, Building D",
-      image: "./images/inaugposter.png",
+      image: "./images/Events/inaugposter.png",
       category: "All Events"
     },
     {
@@ -24,7 +24,7 @@ const Events = () => {
       date: "December 21, 2022",
       time: " 3:20 PM",
       location: "Coding Lab, 4th Floor, AIML Block",
-      image: "./images/poster1.jpg",
+      image: "./images/Events/poster1.jpg",
       category: "hackathon"
     },
     {
@@ -34,7 +34,7 @@ const Events = () => {
       date: "January 09, 2023",
       time: " 2:00 PM",
       location: "3th Floor, AIML Block",
-      image: "./images/poster2.jpg",
+      image: "./images/Events/poster2.jpg",
       category: "hackathon"
     },
     {
@@ -44,7 +44,7 @@ const Events = () => {
       date: "February 14-15, 2023",
       time: "3:00 PM - 5:00 PM",
       location: "401, AIML Block",
-      image: "./images/Peer to peer.jpeg",
+      image: "./images/Events/Peer to peer.jpeg",
       category: "workshop"
     },
     {
@@ -54,7 +54,7 @@ const Events = () => {
       date: "July 24, 2024",
       time: "11:30 AM",
       location: "RN Shetty Mini Auditorium",
-      image: "./images/Harsha sir LLM talk.png",
+      image: "./images/Events/Harsha sir LLM talk.png",
       category: "tech_talk"
     },
     {
@@ -64,8 +64,18 @@ const Events = () => {
       date: "March 10, 2025",
       time: "2:00 PM",
       location: "RN Shetty Mini Auditorium",
-      image: "./images/Talk.jpg",
+      image: "./images/Events/Talk.jpg",
       category: "tech_talk"
+    },
+    {
+      id: 10,
+      title: "Stackwise Episode 1 ",
+      description: "Hands on peer to peer Workshop.",
+      date: "May 31, 2025",
+      time: "6:00 PM - 8:00 PM",
+      location: "Online Mode",
+      image: "./images/Events/Stackwise.jpg",
+      category: "workshop"
     },
   ];
 
@@ -130,11 +140,11 @@ const Events = () => {
                 {filteredPast.length > 0 ? (
                   filteredPast.map((event) => (
                     <Card key={event.id} className="overflow-hidden card-hover flex flex-col h-full">
-                      <div className="h-40 xs:h-48 sm:h-56 md:h-64 overflow-hidden">
+                      <div className="h-96 xs:h-[28rem] sm:h-[32rem] md:h-[36rem] lg:h-[40rem] overflow-hidden">
                         <img
                           src={event.image}
                           alt={event.title}
-                          className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-300"
+                          className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-300 border-4 border-tech-purple"
                         />
                       </div>
                       <CardHeader className="flex-1">
