@@ -6,8 +6,8 @@ import { Button } from "@/components/ui/button";
 const handleSubscribe = async (event) => {
   event.preventDefault();
 
-  const name = document.getElementById("name").value;
-  const email = document.getElementById("email").value;
+  const name = (document.getElementById("name") as HTMLInputElement | null)?.value || "";
+  const email = (document.getElementById("email") as HTMLInputElement | null)?.value || "";
 
   try {
     const response = await fetch("http://localhost:5000/newsletter", {
