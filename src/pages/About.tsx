@@ -93,7 +93,7 @@ const About = () => {
       name: "Mr. Shreyas Mahadeva",
       title: "Design & Media Coordinator",
       description: "Plays a key role in shaping our club’s visual identity and media presence through creative contributions and design support.",
-      image: "./images/Shreyas_sir.jpg"
+      image: "./images/members/Shreyas_sir.jpg"
     },
   ];
 
