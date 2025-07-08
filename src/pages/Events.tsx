@@ -94,12 +94,13 @@ const Events = () => {
           </div>
 
           <div className="mb-8 flex justify-center">
-            <div className="inline-block border rounded-lg p-1">
+            {/* Make event categories horizontally scrollable on mobile */}
+            <div className="inline-block border rounded-lg p-1 overflow-x-auto flex gap-2 md:gap-0 md:block scrollbar-hide">
               {eventCategories.map((category) => (
                 <button
                   key={category.id}
                   onClick={() => setSelectedCategory(category.id)}
-                  className={`px-4 py-2 text-sm rounded-md transition-colors ${
+                  className={`px-3 py-2 text-xs sm:text-sm rounded-md transition-colors whitespace-nowrap min-w-[90px] md:min-w-0 ${
                     selectedCategory === category.id
                       ? "bg-tech-purple text-white"
                       : "hover:bg-muted"
@@ -112,48 +113,48 @@ const Events = () => {
           </div>
 
           <Tabs defaultValue="upcoming" className="w-full">
-            <TabsList className="grid w-full max-w-md mx-auto grid-cols-2 mb-8">
-              <TabsTrigger value="upcoming">Upcoming Events</TabsTrigger>
-              <TabsTrigger value="past">Past Events</TabsTrigger>
+            <TabsList className="flex w-full max-w-md mx-auto mb-8 gap-2">
+              <TabsTrigger value="upcoming" className="flex-1 text-xs sm:text-base">Upcoming Events</TabsTrigger>
+              <TabsTrigger value="past" className="flex-1 text-xs sm:text-base">Past Events</TabsTrigger>
             </TabsList>
 
             <TabsContent value="upcoming">
-              <div className="col-span-full text-center py-20">
-                <h2 className="text-2xl font-bold text-tech-purple mb-2">Coming Soon !!!</h2>
-                <p className="text-muted-foreground">Stay tuned for exciting upcoming events.</p>
+              <div className="col-span-full text-center py-16 sm:py-20">
+                <h2 className="text-xl sm:text-2xl font-bold text-tech-purple mb-2">Coming Soon !!!</h2>
+                <p className="text-muted-foreground text-sm sm:text-base">Stay tuned for exciting upcoming events.</p>
               </div>
             </TabsContent>
 
             <TabsContent value="past">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
                 {filteredPast.length > 0 ? (
                   filteredPast.map((event) => (
-                    <Card key={event.id} className="overflow-hidden card-hover">
-                      <div className="h-100 overflow-hidden">
+                    <Card key={event.id} className="overflow-hidden card-hover flex flex-col h-full">
+                      <div className="h-40 xs:h-48 sm:h-56 md:h-64 overflow-hidden">
                         <img
                           src={event.image}
                           alt={event.title}
                           className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-300"
                         />
                       </div>
-                      <CardHeader>
-                        <div className="flex items-center space-x-4 text-sm text-muted-foreground mb-2">
+                      <CardHeader className="flex-1">
+                        <div className="flex items-center space-x-4 text-xs sm:text-sm text-muted-foreground mb-2">
                           <div className="flex items-center">
                             <Calendar className="mr-2 h-4 w-4" />
                             {event.date}
                           </div>
                         </div>
-                        <CardTitle>{event.title}</CardTitle>
-                        <CardDescription>{event.description}</CardDescription>
+                        <CardTitle className="text-base sm:text-lg">{event.title}</CardTitle>
+                        <CardDescription className="text-xs sm:text-sm">{event.description}</CardDescription>
                       </CardHeader>
                       <CardContent>
-                        <div className="flex items-center text-sm text-muted-foreground">
+                        <div className="flex items-center text-xs sm:text-sm text-muted-foreground">
                           <MapPin className="mr-2 h-4 w-4" />
                           {event.location}
                         </div>
                       </CardContent>
                       <CardFooter>
-                        <Button variant="outline" className="w-full">
+                        <Button variant="outline" className="w-full text-xs sm:text-base">
                           View Details
                         </Button>
                       </CardFooter>

@@ -43,16 +43,16 @@ const Contact = () => {
 
   return (
     <Layout>
-      <div className="py-12 md:py-20">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h1 className="text-4xl font-bold mb-2 gradient-heading">Contact Us</h1>
-            <p className="text-muted-foreground max-w-xl mx-auto">
+      <div className="py-8 sm:py-10 md:py-16 lg:py-20">
+        <div className="container mx-auto px-2 sm:px-4">
+          <div className="text-center mb-8 sm:mb-10 md:mb-12">
+            <h1 className="text-3xl sm:text-4xl font-bold mb-2 gradient-heading">Contact Us</h1>
+            <p className="text-muted-foreground max-w-md sm:max-w-xl mx-auto text-base sm:text-lg">
               Have a question or want to get involved? Reach out to us through any of the channels below.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-10 md:mb-16">
             <Card className="card-hover">
               <CardHeader className="text-center">
                 <div className="mx-auto bg-muted w-12 h-12 rounded-full flex items-center justify-center text-tech-purple mb-4">
@@ -126,11 +126,12 @@ const Contact = () => {
             </Card>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-start">
             <div>
-              <h2 className="text-2xl font-bold mb-6">Send Us a Message</h2>
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <h2 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6">Send Us a Message</h2>
+              <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium mb-1">Name</label>
                     <input
@@ -140,7 +141,7 @@ const Contact = () => {
                       required
                       value={formData.name}
                       onChange={handleChange}
-                      className="w-full p-2 rounded-md border border-border focus:outline-none focus:ring-2 focus:ring-tech-purple"
+                      className="w-full p-2 sm:p-3 rounded-md border border-border focus:outline-none focus:ring-2 focus:ring-tech-purple text-sm sm:text-base"
                     />
                   </div>
                   <div>
@@ -152,7 +153,7 @@ const Contact = () => {
                       required
                       value={formData.email}
                       onChange={handleChange}
-                      className="w-full p-2 rounded-md border border-border focus:outline-none focus:ring-2 focus:ring-tech-purple"
+                      className="w-full p-2 sm:p-3 rounded-md border border-border focus:outline-none focus:ring-2 focus:ring-tech-purple text-sm sm:text-base"
                     />
                   </div>
                 </div>
@@ -165,7 +166,7 @@ const Contact = () => {
                     required
                     value={formData.subject}
                     onChange={handleChange}
-                    className="w-full p-2 rounded-md border border-border focus:outline-none focus:ring-2 focus:ring-tech-purple"
+                    className="w-full p-2 sm:p-3 rounded-md border border-border focus:outline-none focus:ring-2 focus:ring-tech-purple text-sm sm:text-base"
                   >
                     <option value="">Select a subject</option>
                     <option value="general">General Inquiry</option>
@@ -181,17 +182,17 @@ const Contact = () => {
                   <textarea
                     id="message"
                     name="message"
-                    rows={5}
+                    rows={4}
                     required
                     value={formData.message}
                     onChange={handleChange}
-                    className="w-full p-2 rounded-md border border-border focus:outline-none focus:ring-2 focus:ring-tech-purple"
+                    className="w-full p-2 sm:p-3 rounded-md border border-border focus:outline-none focus:ring-2 focus:ring-tech-purple text-sm sm:text-base"
                   ></textarea>
                 </div>
 
                 <Button
                   type="submit"
-                  className="w-full bg-tech-purple hover:bg-tech-purple/90"
+                  className="w-full bg-tech-purple hover:bg-tech-purple/90 text-base sm:text-lg py-2 sm:py-3"
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? 'Sending...' : 'Send Message'}
@@ -199,14 +200,12 @@ const Contact = () => {
               </form>
             </div>
 
-            <div className="mt-16 py-10 text-center">
-            <h2 className="text-2xl font-bold mb-4">Ready to Join the Club?</h2>
-            <p className="text-muted-foreground mb-6 max-w-xl mx-auto">
-              We're always looking for passionate tech enthusiasts to join our community. Fill out the form or contact us directly to learn about membership opportunities.
-            </p>
-          </div>
-
-            
+            <div className="mt-10 md:mt-16 py-6 md:py-10 text-center">
+              <h2 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">Ready to Join the Club?</h2>
+              <p className="text-muted-foreground mb-4 sm:mb-6 max-w-md sm:max-w-xl mx-auto text-base sm:text-lg">
+                We're always looking for passionate tech enthusiasts to join our community. Fill out the form or contact us directly to learn about membership opportunities.
+              </p>
+            </div>
           </div>
 
          
