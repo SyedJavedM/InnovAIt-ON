@@ -1,9 +1,10 @@
-🚀 Tech Club Portal Hub
-📌 Overview
+**🚀 Tech Club Portal Hub**
+
+**📌 Overview**
 
 Welcome to the official repository of the Tech Club Portal Hub – a platform built to manage and showcase the activities, members, and events of the tech club. It provides a dynamic space for students, contributors, and alumni to stay connected and informed.
 
-✨ Features
+**✨ Features**
 
 Dynamic Home Page – Highlights the club’s mission, focus areas, and upcoming events
 
@@ -15,7 +16,7 @@ Newsletter – Allows users to subscribe and stay updated
 
 Gallery – A collection of images from club events and activities
 
-🛠️ Technologies Used
+**🛠️ Technologies Used**
 
 Vite – Fast build tool for modern web projects
 
